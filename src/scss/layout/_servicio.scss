@@ -23,5 +23,6 @@
     }
     @include m.tablet {
         @include m.contenedor;
+        padding: 0 0 4rem 0;
     }
 }

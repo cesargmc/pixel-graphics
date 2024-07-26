@@ -29,6 +29,11 @@
             padding-left: 1rem;
         }
     }
+
+    a:last-child {
+        margin-bottom: 0
+    }
+
     @include m.tablet {
         @include m.contenedor;
     }

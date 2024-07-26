@@ -1,21 +1,28 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.redes {
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-    .contenido-redes {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        justify-items: center;
-        margin-top: 4rem;
-    }
-    a {
-        width: 4rem;
-        height: 4rem;
-    }
-    @include m.tablet {
-        @include m.contenedor;
+.wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 20dvh;
+    justify-content: center;
+
+    .redes {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        .contenido-redes {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-items: center;
+            margin-top: 2.5rem;
+        }
+        a {
+            width: 4rem;
+            height: 4rem;
+        }
+        @include m.tablet {
+            @include m.contenedor;
+        }
     }
 }
