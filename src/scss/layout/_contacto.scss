@@ -29,4 +29,7 @@
             padding-left: 1rem;
         }
     }
+    @include m.tablet {
+        @include m.contenedor;
+    }
 }
