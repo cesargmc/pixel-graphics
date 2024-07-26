@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.redes {
+    margin: 0 auto;
+    width: 50%;
+    padding: 3rem 0;
+    text-align: center;
+    .contenido-redes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
