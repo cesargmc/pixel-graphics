@@ -21,7 +21,7 @@
             width: 3.5rem;
         }
     }
-    @include m.tablet {
+    @include m.desktop {
         @include m.contenedor;
         padding: 0 0 4rem 0;
     }
