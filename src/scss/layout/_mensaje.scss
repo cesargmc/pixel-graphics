@@ -1,28 +1,21 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.redes {
-    @include m.contenedorXL;
+
+.contenido-principal {
+    width: 70%;
     margin: 0 auto;
-    text-align: center;
+    padding-bottom: 4rem;
 
-    .contenido-redes {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        justify-items: center;
-        margin: 2.5rem 0;
-    }
-
-    .btn {
+    a {
         display: flex;
         justify-content: center;
-        align-items: center;
         border: 1px #F7F7F8 solid;
         border-radius: 1rem;
         background-color: white;
         width: 100%;
-        padding: 3rem 0;
-        margin-bottom: 2.5rem;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
         .whatsapp { color: v.$verde; }
@@ -37,16 +30,11 @@
         }
     }
 
-    .btn:last-child {
+    a:last-child {
         margin-bottom: 0
     }
 
-    a {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    @include m.tablet {
+    @include m.desktop {
         @include m.contenedor;
     }
 }
