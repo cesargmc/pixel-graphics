@@ -1,16 +1,44 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.servicios {
-    background-color: v.$rosa;
-    h3, .dia {
+.servicio {
+    width: 100%;
+    background-image: url('/build/img/pintura.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h3, .sucursal {
         text-align: center;
-        color: v.$blanco;
+        color: v.$negro;
     }
+
+    .sucursal { font-size: 3rem; }
 
     .dia {
         font-size: 3rem;
         text-transform: uppercase;
+    }
+
+    .complementos {
+        justify-content: center;
+        border: 1px #F7F7F8 solid;
+        border-radius: 2rem;
+        background-color: white;
+        width: 100%;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .nombre-complemento { 
+            margin: 0;
+            padding-left: 1rem;
+            text-align: center;
+        }
+    }
+
+    a:last-child {
+        margin-bottom: 0
     }
 }
 
@@ -19,26 +47,6 @@
 
     @include m.tablet {
         @include m.grid(2);
-    }
-}
-
-.escenario {
-    padding-top: 2rem;
-    &:first-child {
-        margin-bottom: 2rem;
-    }
-
-    @include m.tablet {
-        &:first-child {
-            margin: 0;
-        }
-    }
-
-    .nombre-escenario {
-        font-size: 3rem;
-        font-weight: 900;
-        text-transform: uppercase;
-        text-align: center;
     }
 }
 
@@ -51,21 +59,5 @@
         span { 
             font-weight: 400;
         }
-    }
-}
-
-.bg-amarillo {
-    background-color: v.$amarillo;
-
-    li:nth-child(odd) {
-        background-color: lighten(v.$amarillo, 5%);
-    }
-}
-
-.bg-verde {
-    background-color: v.$azul;
-
-    li:nth-child(odd) {
-        background-color: lighten(v.$azul, 5%);
     }
 }

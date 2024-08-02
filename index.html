@@ -13,24 +13,22 @@
 <body>
     <header class="header-index">
         <div class="contenedor contenido-header">
-            <div class="logo">
+            <a href="#inicio">
                 <picture>
-                    <source srcset="build/img/Pixel-Graphics-removebg.webp" type="image/webp">
-                    <source srcset="build/img/Pixel-Graphics-removebg.avif" type="image/avif">
-                        <img src="build/img/Pixel-Graphics-removebg.png" alt="Descripción de la imagen">
+                    <source srcset="build/img/logo.webp" type="image/webp">
+                    <source srcset="build/img/logo.avif" type="image/avif">
+                    <img src="build/img/logo.png" alt="Descripción de la imagen">
                 </picture>
-                        
-                <h1>Pixel Graphics</h1>
-            </div>
+            </a>
 
             <nav class="navegacion-principal">
-                <a href="#servicios">Servicios</a>
+                <a href="#servicio">Servicios</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <div class="foto">
+    <div id="inicio" class="foto">
         <div class="overlay">
             <div class="contenedor contenido-foto">
                 <h2>Impresión Digital</h2>
@@ -60,13 +58,13 @@
         </div>
     </section><!-- NOSOTROS -->
 
-    <section id="servicios" class="servicios">
+    <section id="servicio" class="servicio">
         <h3>Servicios</h3>
     
-        <p class="dia">Casa Blanca</p>
+        <p class="sucursal">Casa Blanca</p>
         <div class="escenarios-contenedor">
-            <div class="escenario bg-verde">
-                <p class="nombre-escenario">Imprenta</p>
+            <div class="complementos">
+                <p class="nombre-complemento">Imprenta</p>
     
                 <ul class="calendario">
                     <li>
@@ -90,8 +88,8 @@
                 </ul>
             </div>
     
-            <div class="escenario bg-amarillo">
-                <p class="nombre-escenario">Merceria</p>
+            <div class="complementos">
+                <p class="nombre-complemento">Merceria</p>
     
                 <ul class="calendario">
                     <li>
@@ -117,10 +115,10 @@
         </div>
     
     
-        <p class="dia">Palermo</p>
+        <p class="sucursal">Palermo</p>
         <div class="escenarios-contenedor">
-            <div class="escenario bg-verde">
-                <p class="nombre-escenario">Imprenta</p>
+            <div class="complementos">
+                <p class="nombre-complemento">Imprenta</p>
     
                 <ul class="calendario">
                     <li>
@@ -144,8 +142,8 @@
                 </ul>
             </div>
     
-            <div class="escenario bg-amarillo">
-                <p class="nombre-escenario">Merceria</p>
+            <div class="complementos">
+                <p class="nombre-complemento">Merceria</p>
     
                 <ul class="calendario">
                     <li>
@@ -171,33 +169,73 @@
         </div>
     </section><!-- SERVICIOS -->
 
-    <section id="contacto" class="contacto redes">
-        <h2>Contacto</h2>
-        <a class="btn" href="menu/casablanca.html">Casa Blanca</a>
-        <a class="btn" href="menu/palermo.html">Palermo</a>
+    <section id="contacto" class="contenedor-boletos">
+        <h3>Contacto</h3>
+    
+        <div class="boletos">
+            <div class="pase">
+                <p class="pase-nombre">Casa Blanca</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Impresiones</li>
+                        <li>Ciber</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <a class="btn" href="menu/casablanca.html">
+                        <p>Casa Blanca</p>
+                    </a>
+                </footer>
+            </div>
 
-        <div class="contenido-redes">
-            <a class="facebook" href="https://www.facebook.com/profile.php?id=100063838758307" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0166C0" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                </svg>
-            </a>
-
-            <a class="instagram" href="https://www.instagram.com/_pixelgs/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF3E34" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M16.5 7.5l0 .01" />
-            </svg>
-            </a>
+            <div class="pase">
+                <p class="pase-nombre">Palermo</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Impresiones</li>
+                        <li>Papeleria</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <a class="btn" href="menu/palermo.html">
+                        <p>Palermo</p>
+                    </a>
+                </footer>
+            </div>
         </div>
-    </section><!-- CONTACTO -->
+
+        <div class="redes">
+            <div class="contenido-redes">
+                <a class="facebook" href="https://www.facebook.com/profile.php?id=100063838758307" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0166C0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+
+                <a class="instagram" href="https://www.instagram.com/_pixelgs/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF3E34" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section><!-- CONTACTO & REDES -->
 
     <footer class="footer">
         <p>Pixel Graphics.</p>
         <p>Hecho y diseñado por <a href="https://cgamcs.vercel.app/" target="_blank">César García</a>.</p>
     </footer>
+
+    <script src="build/js/app.js"></script>
 </body>
 </html>

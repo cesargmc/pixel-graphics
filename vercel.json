@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      { "source": "/casablanca", "destination": "/casablanca.html" },
+      { "source": "/palermo", "destination": "/palermo.html" },
+      { "source": "/", "destination": "/index.html" }
+    ]
+  }
+  

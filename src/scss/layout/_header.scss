@@ -10,8 +10,6 @@ a {
     width: 50%;
     padding: 3rem 0 4rem 0;
     .contenido-header{
-        display: grid;
-        grid-template-columns: 33.3% 66.6%;
         h1{
             font-size: 2.5rem;
             text-align: left;
@@ -19,19 +17,19 @@ a {
         }
         img {
             height: 5rem;
-            width: 5rem;
+            width: 20rem;
             justify-content: right;
-            margin: 1rem;
         }
 
         @include m.tablet {
-        display: flex;
-        justify-content: center;
+            display: flex;
+            justify-content: center;
         }
     }
 }
 
 .header-index {
+    z-index: 1;
     background-color: v.$rosa;
 
     .logo {
@@ -55,7 +53,7 @@ a {
     }
 
     .contenido-header {
-        padding: 1rem 2rem;
+        padding: 1rem 0;
         @include m.tablet {
             display: flex;
             justify-content: space-between;
@@ -73,12 +71,19 @@ a {
         }
     }
 
+    picture {
+        display: flex;
+        justify-content: center;
+    }
+
     img {
         height: 5rem;
-        width: 5rem;
-        justify-content: right;
-        margin: 1rem;
-        margin: 0;
+        width: 20rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+        @include m.tablet {
+            margin: 0;
+        }
     }
 }
 
@@ -94,6 +99,7 @@ a {
     a {
         color: v.$blanco;
         font-size: 2.4rem;
+        font-weight: 600;
 
         &:hover,
         &.active {
